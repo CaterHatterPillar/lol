@@ -9,14 +9,12 @@
   (setf *small* (1+ (guess)))
   (guess))
 
-(defun welcome ()
+(defun revenge ()
   (defparameter *small* 1)
   (defparameter *big* 100)
-  (print "The Lisp mothership says: welcome to a guessing game
-          authored in Common Lisp. Please come up with a number
-          between 1 and 100 for the computer to guess. Be wary of not
-          speaking the number loudly so that the machine might hear
-          you. Use guess, smaller, bigger and welcome functions to control
-          the game. Best of luck to you."))
+  (guess))
 
-(welcome)
+(print "Welcome to guessing game. Please come up with a number between
+  1 and 100 for Lisp to guess. Use 'smaller', 'bigger', and 'revenge'
+  functions to control the game.")
+(print (revenge))
