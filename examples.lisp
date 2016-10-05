@@ -9,8 +9,8 @@
 (expect_equal (car *fruits*) 'apple)
 (expect_equal (cadr *fruits*) 'banana) ; same as: (car (cdr *fruits*))
 (expect_equal (cdar *types*) 'royal) ; same as: (cdr (car *types*))
-;; ^ Expectation fails. I don't understand why (cdar *types*) returns
-;; (royal) and not royal
+;; TODO(enilsson): Expectation fails. I don't understand why (cdar
+;; *types*) returns (royal) and not royal
 
 (defun len (l)
   (if l
