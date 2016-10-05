@@ -1,6 +1,6 @@
 (load "ut.lisp")
 
-(expect_nonequal '(1) '1)
+(expect_nonequal '(1) 1)
 
 ;; same as: (list apple banana citrus ...)
 (defparameter *fruits* '(apple banana citrus dates eels fig))
